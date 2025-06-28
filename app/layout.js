@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { shadesOfPurple } from "@clerk/themes";
+import Home from "./page";
 
 export const metadata = {
   title: "Zscrum",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <body className={`${inter.className} dotted-background`}>
           <ThemeProvider attribute={"class"} defaultTheme={"dark"}>
             <Header />
+
             <main className="min-h-screen"> {children}</main>
             <footer className="bg-gray-900 py-12">
               {" "}
