@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-const layout = ({children}) => {
+const AuthLayout = ({ children }) => {
   return (
-    <div className='flex justify-center align-middle pt-20'>{children}</div>
-  )
-}
+    <div className="flex justify-center align-middle pt-20">{children}</div>
+  );
+};
 
-export default layout
+export default AuthLayout;
